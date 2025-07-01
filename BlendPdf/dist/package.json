@@ -1,0 +1,37 @@
+{
+  "name": "blendpdf",
+  "version": "1.0.0",
+  "description": "Free and secure online PDF tools - client-side processing",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000 --open=/",
+    "build": "mkdir -p dist && cp -r * dist/ && echo 'Build completed - static files copied to dist/'",
+    "dev": "npx live-server --port=3000 --open=/"
+  },
+  "keywords": [
+    "pdf",
+    "tools",
+    "merge",
+    "split",
+    "compress",
+    "organize",
+    "client-side",
+    "secure",
+    "free"
+  ],
+  "author": "Blendpdf",
+  "license": "MIT",
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^2.16.105"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blendpdf/blendpdf.git"
+  },
+  "homepage": "https://blendpdf.com"
+}
